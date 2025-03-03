@@ -1,47 +1,43 @@
-# Node.js + Express + MongoDB Docker Template
+# WEB dev Challenge 2025 - B Module
+## Node.js + Express + MongoDB Docker Template
 
-Šis šablonas skirtas konkursui, kuriame dalyviai gali forkuoti projektą ir sukurti savo aplikaciją.
+Welcome to the **Dev Challenge 2025**! Follow the steps below to set up your repository and deploy your project successfully.
 
-## 🚀 Kaip paleisti projektą?
+## 🚀 Getting Started
 
-### 1️⃣ Reikalavimai
-Prieš pradedant įsitikinkite, kad turite įdiegtus:
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+### Fork the Repository
+You need to fork the official repository before making any changes. Follow these steps:
 
-### 2️⃣ Projekto klonavimas
+1. Click the **Fork** button in the top-right corner of this repository.
+2. Name your repository in the following format:
+   ```
+   module-b-express-mariadb-{your-number}
+   ```
+   Example: `module-f-react-1`
+3. Click **Create Fork**.
 
-Fork ir clone rpo:
-```sh
-git clone https://github.com/KITM-WEB-dev-challange/tavo_vardas/node-docker-template.git
-cd node-docker-template
-cp .env-example .env
-```
+### Run Docker
 
-### 3️⃣ Paleidimas su Docker
-
-Paleiskite komandą:
+Run command:
 ```sh
 docker-compose up --build
 ```
-Tai paleis tiek aplikaciją, tiek MongoDB konteineryje.
+Docker start your app.
 
-Savo kompiuteryje naudokit:
+In development enviroment use:
 ```sh
 npm i
 npm start
 ```
+Your source code must be in src folder.
 
-### 5️⃣ API testavimas
+### API testing
 
-Aplikacija veiks adresu: `http://localhost:3000/`
-Galite patikrinti per naršyklę arba `curl`:
+Application address: `http://localhost:3000/`
+Test over postman or `curl`:
 ```sh
 curl http://localhost:3000/
 ```
-
-### 6️⃣ Plėskite savo aplikaciją
-Galite pridėti savo modelius, maršrutus ir funkcionalumą aplankuose `models/`, `routes/`, `config/`.
 
 ---
 
@@ -51,4 +47,12 @@ Galite pridėti savo modelius, maršrutus ir funkcionalumą aplankuose `models/`
 - **Docker** + **Docker Compose**
 
 
-Sėkmės konkurse! 🚀
+## 🎯 Competition Rules
+- Do **not** change the repository structure.
+- Ensure that your project builds and runs without errors.
+- The final deployed version must be accessible via GitHub Pages.
+
+Good luck and happy coding! 🚀
+
+## 👨‍💻 Authors
+- **[Martynas Kašelionis](https://github.com/martynasIN)** - Main contributor  
