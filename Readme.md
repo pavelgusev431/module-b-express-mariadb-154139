@@ -41,7 +41,7 @@ curl http://localhost:3000/
 
 ---
 
-## 🛠 Naudotos technologijos
+## 🛠 Technologies list:
 - **Node.js** + **Express**
 - **MoriaDB** + **Typeorm**
 - **Docker** + **Docker Compose**
