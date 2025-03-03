@@ -1,0 +1,12 @@
+# Ignoruoti node_modules aplanką
+node_modules/
+
+# Ignoruoti .env failą (jei jame yra slapta informacija, pvz., duomenų bazės prisijungimo duomenys)
+.env
+
+# Ignoruoti log failus
+*.log
+
+# Ignoruoti kompiuterio sistemos failus (pvz., macOS arba Windows)
+.DS_Store
+Thumbs.db
