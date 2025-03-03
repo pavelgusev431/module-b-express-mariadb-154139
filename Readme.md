@@ -1,5 +1,5 @@
 # WEB dev Challenge 2025 - B Module
-## Node.js + Express + MongoDB Docker Template
+## Node.js + Express + MariaDB Docker Template
 
 Welcome to the **Dev Challenge 2025**! Follow the steps below to set up your repository and deploy your project successfully.
 
