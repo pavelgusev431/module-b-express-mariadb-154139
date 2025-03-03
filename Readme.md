@@ -13,7 +13,7 @@ You need to fork the official repository before making any changes. Follow these
    ```
    module-b-express-mariadb-{your-number}
    ```
-   Example: `module-f-react-1`
+   Example: `module-b-express-mariadb-1`
 3. Click **Create Fork**.
 
 ### Run Docker
