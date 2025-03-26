@@ -1,44 +1,27 @@
-require('dotenv').config();
-const express = require('express');
-const mysql = require('mysql2');
-const cors = require('cors');
+import dotenv from "dotenv";
+import express from "express";
+import cors from "cors";
+import {populatePlaces} from "./controllers/placeController.js";
+import placeRouter from "./routers/placeRouter.js";
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-// Database connection pool
-const db = mysql.createPool({
-    host: process.env.DB_HOST || 'db',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'password',
-    database: process.env.DB_NAME || 'competition',
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
-});
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-// Check database connection
-db.getConnection((err, connection) => {
-    if (err) {
-        console.error('❌ MySQL connection error:', err);
-    } else {
-        console.log('✅ MariaDB connected');
-        connection.release();
-    }
-});
-
 // Welcome Route
-app.get('/', (req, res) => {
+app.get('/module-b/api/v1/', (_req, res) => {
     res.send('🚀 Welcome to the Competition WEB <dev> Challenge 2025 Node.js template!');
 });
 
-
+app.use("/module-b/api/v1/places", placeRouter);
 
 // Start Server
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+app.listen(PORT, async () => {
+    await populatePlaces();
+    console.log(`🚀 Server running on http://localhost:${PORT}\n`);
 });

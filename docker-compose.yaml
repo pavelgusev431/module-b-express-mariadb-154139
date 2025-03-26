@@ -30,10 +30,10 @@ services:
       db:
         condition: service_healthy
     environment:
-      - DB_HOST=db
-      - DB_USER=dev2025
-      - DB_PASSWORD=password
-      - DB_NAME=competition
+      - DB_HOST=172.17.51.94
+      - DB_USER=154139
+      - DB_PASSWORD=154139
+      - DB_NAME=154139
     volumes:
       - ./:/app
     ports:
